@@ -1,0 +1,27 @@
+div{
+    padding: 20px;
+    margin: 0;
+}
+
+.width-100{
+    width: 100%;
+
+    padding: 20px 0;
+    height: 400;
+}
+
+nav {
+    width: 20%;
+    float: left;
+    display: table;
+    height: 100%;
+}
+article, .textao, .tabeladeformatacao {
+    width: 80%;
+    float: left;
+    height: 100%;
+    box-sizing: border-box;
+}
+iframe {
+ width: 100%;
+}
