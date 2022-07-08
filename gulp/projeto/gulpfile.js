@@ -3,7 +3,7 @@ const concat = require('gulp-concat')
 const cssmin = require('gulp-cssmin')
 const rename = require('gulp-rename')
 const uglify = require('gulp-uglify')
-//const image = require('gulp-image')
+const image = require('gulp-image')
 const stripJs = require('gulp-strip-comments')
 const stripCss = require('gulp-strip-css-comments')
 
@@ -42,7 +42,7 @@ function tarefasJS(){
 }
 
 
-/* function tarefasImagem(){
+function tarefasImagem(){
     
     return gulp.src('./src/images/*')
         .pipe(image({
@@ -57,8 +57,8 @@ function tarefasJS(){
             quiet: true
         }))
         .pipe(gulp.dest('./dist/images'))
-} */
+}
 
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS
-//exports.images = tarefasImagem
+exports.images = tarefasImagem
